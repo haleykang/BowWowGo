@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">BowWowGo</string>
+	<string name="bowwow_main">어떻게 바꿔볼까?</string>
+	<string name="action_settings">Settings</string>
+</resources>

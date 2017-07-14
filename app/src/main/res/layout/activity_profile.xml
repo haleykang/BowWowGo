@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+	
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimary"
+		android:orientation="vertical">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:padding="@dimen/view_padding"
+			android:text="프로필"
+			android:textColor="#FFFFFF"
+			android:textSize="20dp"/>
+	
+	
+	</LinearLayout>
+	
+	
+	<!--강아지 사진등록-->
+	<FrameLayout
+		android:layout_width="@dimen/view_width"
+		android:layout_height="150dp"
+		android:layout_gravity="center"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/box"
+		>
+		
+		<ImageView
+			android:id="@+id/add_profile_photo_iv"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_gravity="center"
+			android:src="@drawable/ic_add_a_photo_black_24dp"/>
+		
+		<ImageView
+			android:id="@+id/profile_image_iv"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:adjustViewBounds="true"
+			android:scaleType="fitXY"/>
+	
+	</FrameLayout>
+	
+	<!--강아지 이름 -->
+	
+	
+	<EditText
+		android:id="@+id/dog_name_et"
+		style="e"
+		android:layout_width="@dimen/view_width"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="@dimen/view_margin"
+		android:drawableStart="@drawable/ic_paw_print"
+		android:hint=" 멍멍이 이름"
+		android:textSize="15dp"/>
+	
+	<!--강아지 생일-->
+	
+	<LinearLayout
+		android:layout_width="@dimen/view_width"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="@dimen/view_margin"
+		android:orientation="horizontal">
+		<!--
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleType="center"
+			android:src="@drawable/ic_cake_24dp"/>-->
+		
+		<EditText
+			android:id="@+id/birth_year_et"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:drawableStart="@drawable/ic_cake_24dp"
+			android:gravity="center"
+			android:hint="년(4자)"
+			android:inputType="number"
+			android:maxLength="4"
+			android:textSize="15dp"/>
+		
+		
+		<Spinner
+			android:id="@+id/birth_month_sp"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"/>
+		
+		
+		<Spinner
+			android:id="@+id/birth_day_sp"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"/>
+	
+	
+	</LinearLayout>
+	
+	<!-- 강아지 몸무게 -->
+	<LinearLayout
+		android:layout_width="@dimen/view_width"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="@dimen/view_margin"
+		android:orientation="horizontal">
+		
+		<EditText
+			android:id="@+id/dog_weight_et"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:drawableStart="@drawable/ic_weight"
+			android:hint=" 몸무게"
+			android:inputType="numberDecimal"
+			android:maxLength="4"
+			android:textSize="15dp"/>
+		
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Kg"/>
+	
+	</LinearLayout>
+	
+	<!--강아지 성별-->
+	<RadioGroup
+		android:id="@+id/dogGenderGroup"
+		android:layout_width="@dimen/view_width"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="@dimen/view_margin"
+		android:orientation="horizontal">
+		
+		
+		<RadioButton
+			android:id="@+id/dog_gender_W"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:checked="true"
+			android:text="공주님"
+			/>
+		
+		<RadioButton
+			android:id="@+id/dog_gender_M"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="@dimen/view_margin"
+			android:layout_weight="1"
+			android:text="왕자님"/>
+	
+	</RadioGroup>
+	
+	
+	<!-- 멍멍고 시작 / 나중에 입력하기-->
+	<Button
+		android:id="@+id/save_profile_bt"
+		android:layout_width="@dimen/view_width"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="@dimen/view_margin"
+		android:background="@color/colorAccent"
+		android:text="START"
+		android:textColor="#FFFFFF"/>
+	
+	<TextView
+		android:id="@+id/later_profile_tv"
+		android:layout_width="@dimen/view_width"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:gravity="center"
+		android:text="나중에 등록하기"/>
+
+
+</LinearLayout>
