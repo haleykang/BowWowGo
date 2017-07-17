@@ -69,6 +69,18 @@
 			android:hint="비밀번호 확인"
 			android:inputType="textPassword"/>
 		
+		
+		
+		<!--테스트 텍스트-->
+		<TextView
+			android:layout_width="@dimen/view_width"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text=""
+			android:layout_marginTop="@dimen/view_margin"
+			android:id="@+id/testTv"/>
+		
+		
 		<!--로그인 버튼-->
 		<Button
 			android:id="@+id/register_bt"

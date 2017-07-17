@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/colorPrimary"
+		android:orientation="vertical">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:padding="@dimen/view_padding"
+			android:text="산책 기록"
+			android:textColor="#FFFFFF"
+			android:textSize="20dp"/>
+	
+	
+	</LinearLayout>
+	
+	
+	<TextView
+		android:id="@+id/time_recode"
+		android:layout_width="@dimen/view_width"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_centerInParent="true"
+		android:gravity="center_horizontal"
+		android:text="00:00:00"
+		android:textSize="50dp"
+		/>
+	
+	
+	<ImageButton
+		android:id="@+id/start_bt"
+		android:layout_width="@dimen/view_width"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="10dp"
+		android:layout_weight="1F"
+		android:src="@drawable/ic_play_arrow_black_24dp"
+		android:visibility="invisible"/>
+	
+	
+	<LinearLayout
+		android:layout_width="@dimen/view_width"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignStart="@+id/start_bt"
+		android:orientation="horizontal"
+		android:visibility="visible">
+		
+		<ImageButton
+			android:id="@+id/pause_bt"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:src="@drawable/ic_pause_black_24dp"/>
+		
+		<ImageButton
+			android:id="@+id/stop_bt"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:src="@drawable/ic_stop_black_24dp"
+			/>
+	
+	
+	</LinearLayout>
+
+
+</RelativeLayout>
